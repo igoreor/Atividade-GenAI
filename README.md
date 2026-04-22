@@ -151,6 +151,8 @@ DB_PATH=banco.db
 MAX_ROWS=500
 ```
 
+> **Como obter a `GOOGLE_API_KEY`:** acesse o [Google AI Studio](https://aistudio.google.com/apikey), faça login com sua conta Google e crie uma chave por lá. É gratuito.
+
 ### 3. Suba o container
 
 ```bash
@@ -183,7 +185,24 @@ docker compose down
 
 API disponível em **http://localhost:8000** | Swagger em **http://localhost:8000/docs**
 
-> Para o frontend, continue a partir do [passo 6](#6-instale-as-dependências-do-frontend) abaixo.
+### 4. Instale as dependências do frontend
+
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+### 5. Inicie o frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend disponível em **http://localhost:3000**
+
+> O Next.js encaminha automaticamente as chamadas `/api/*` para o backend no container. Não é necessário configurar nada extra.
 
 ---
 
@@ -234,6 +253,8 @@ GEMINI_MODEL=gemini-2.5-flash
 DB_PATH=banco.db
 MAX_ROWS=500
 ```
+
+> **Como obter a `GOOGLE_API_KEY`:** acesse o [Google AI Studio](https://aistudio.google.com/apikey), faça login com sua conta Google e crie uma chave por lá. É gratuito.
 
 ### 5. Gere o banco de dados
 
