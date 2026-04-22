@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Rounded square background — matches header avatar color -->
+  <rect width="32" height="32" rx="8" fill="#6366f1"/>
+
+  <!-- Bot icon (Lucide Bot), scaled and centered to 32x32 -->
+  <g transform="translate(4, 4) scale(1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Antenna -->
+    <path d="M12 8V4H8"/>
+    <!-- Head/body rectangle -->
+    <rect x="4" y="8" width="16" height="12" rx="2"/>
+    <!-- Left arm -->
+    <path d="M2 14h2"/>
+    <!-- Right arm -->
+    <path d="M20 14h2"/>
+    <!-- Left eye -->
+    <path d="M9 13v2"/>
+    <!-- Right eye -->
+    <path d="M15 13v2"/>
+  </g>
+</svg>
