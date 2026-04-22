@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Banco já gerado localmente — rebuild dentro do container
+banco.db
+
+# Credenciais
+.env
+
+# Frontend — não faz parte do backend
+frontend/
+
+# Git
+.git/
+.gitignore
+
+# Outros
+.claude/
+*.md
